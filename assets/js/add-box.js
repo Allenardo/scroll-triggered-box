@@ -1,9 +1,18 @@
 var add_hidden = true;
 var add_left_margin = $(window).width() - 50;
 
+$(document).scroll(function(){
+	var y = $(this).scrollTop();
+	if (y > 800) {
+		$('#add-box').fadeIn();
+	} else {
+		$('#add-box').fadeOut();
+	}
+});
+
 $(function(){
   $('#add-box').css('margin-left', add_left_margin);
-  
+  $('#add-box').hide();
   $('#add-arrow').on('click', function(){
     if (add_hidden) {
       $('#add-box').animate({
