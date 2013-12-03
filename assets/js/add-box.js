@@ -1,9 +1,10 @@
 var add_hidden = true;
 var add_left_margin = $(window).width() - 50;
 
-$(document).scroll(function(){
+$(window).scroll(function(){
 	var y = $(this).scrollTop();
-	if (y > 800) {
+	var h = $(window).height();
+	if (y > (h *.25)) {
 		$('#add-box').fadeIn();
 	} else {
 		$('#add-box').fadeOut();
