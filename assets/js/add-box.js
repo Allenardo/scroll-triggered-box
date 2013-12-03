@@ -27,3 +27,21 @@ $(function(){
     add_hidden = !add_hidden;
   });
 });
+
+$(function(){
+  $('#add-arrow').on('click', function(){
+    if (add_hidden) {
+     $('img.arrow').css({
+        "-webkit-transform": "rotate(360deg)",
+        "-moz-transform": "rotate(360deg)",
+        "transform": "rotate(360deg)" 
+     });
+    } else {
+      $('img.arrow').css({
+        "-webkit-transform": "rotate(180deg)",
+        "-moz-transform": "rotate(180deg)",
+        "transform": "rotate(180deg)" 
+       });
+    }
+  });
+});
