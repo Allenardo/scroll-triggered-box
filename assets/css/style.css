@@ -64,6 +64,9 @@ img.arrow {
   margin-right: 20px;
   vertical-align: middle;
   cursor: pointer;
+  -webkit-transform: rotate(180deg);
+  -moz-transfor: rotate(180deg);
+  transform: rotate(180deg); 
 }
 
 #add-image {

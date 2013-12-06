@@ -1,5 +1,6 @@
-var add_hidden = true;
+var add_hidden = false;
 var add_left_margin = $(window).width() - 50;
+var add_displayed = $(window).width() - 370;
 
 $(window).scroll(function(){
 	var scroll_position = $(this).scrollTop();
@@ -12,7 +13,7 @@ $(window).scroll(function(){
 });
 
 $(function(){
-  $('#add-box').css('margin-left', add_left_margin);
+  $('#add-box').css('margin-left', add_displayed);
   $('#add-box').hide();
   $('#add-arrow').on('click', function(){
     if (add_hidden) {
