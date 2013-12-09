@@ -3,9 +3,9 @@ var add_left_margin = $(window).width() - 50;
 var add_out = false;
 
 $(window).scroll(function(){
-	var y = $(this).scrollTop();
-	var h = $(window).height();
-	if (y > (h *.25)) {
+	var scroll_position = $(this).scrollTop();
+	var window_height = $(window).height();
+	if (scroll_position > (h *.25)) {
 		$('#add-box').fadeIn();
 		if (!add_out){
 			$('#add-box').animate({
