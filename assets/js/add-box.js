@@ -5,7 +5,7 @@ var add_out = false;
 $(window).scroll(function(){
 	var scroll_position = $(this).scrollTop();
 	var window_height = $(window).height();
-	if (scroll_position > (h *.25)) {
+	if (scroll_position > (window_height *.25)) {
 		$('#add-box').fadeIn();
 		if (!add_out){
 			$('#add-box').animate({
